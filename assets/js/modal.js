@@ -3,18 +3,21 @@
 
     var closeBtn = document.querySelector(".close");
     var modal = document.querySelector(".modal");
-    var submit = document.querySelector(".btn-contact");
+    var contactButtons = document.querySelectorAll(".btn-contact");
     var send = document.querySelector("#sendEmail");
     var cancel = document.querySelector("#cancel");
+
+    for (let i = 0; i < contactButtons.length; i++) {
+        contactButtons[i].addEventListener("click", function(e) {
+            e.preventDefault();
+            modal.style.display = "flex";
+        });
+    }
     closeBtn.addEventListener("click", function() {
         modal.style.display = "none";
     });
     cancel.addEventListener("click", function() {
         modal.style.display = "none";
-    });
-    submit.addEventListener("click", function(e) {
-        e.preventDefault();
-        modal.style.display = "flex";
     });
 
     send.addEventListener("click", function(e) {

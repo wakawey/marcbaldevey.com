@@ -120,7 +120,7 @@ h1.home__title:hover p.accent {
 }
 
 h1>p.accent {
-    margin-left: -10px;
+    margin-left: -5px;
     display: inline;
 }
 
@@ -977,6 +977,10 @@ h4.category__title {
     .modal-dialog {
         margin: 1rem;
     }
+    h1>p.accent {
+        margin-left: -5px;
+        display: inline;
+    }
 }
 
 
@@ -1001,6 +1005,10 @@ h4.category__title {
     }
     .modal-dialog {
         margin: 2rem;
+    }
+    h1>p.accent {
+        margin-left: -5px;
+        display: inline;
     }
 }
 
@@ -1085,6 +1093,10 @@ h4.category__title {
         right: initial;
         bottom: 0;
         left: 15%;
+    }
+    h1>p.accent {
+        margin-left: -5px;
+        display: inline;
     }
 }
 
@@ -1183,6 +1195,10 @@ h4.category__title {
     }
     .modal-dialog {
         margin: 5rem;
+    }
+    h1>p.accent {
+        margin-left: -10px;
+        display: inline;
     }
 }
 
