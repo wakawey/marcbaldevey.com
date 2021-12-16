@@ -38,6 +38,10 @@ let homeSwiper = new Swiper(".home-swiper", {
         el: ".swiper-pagination",
         clickable: true,
     },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 });
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/

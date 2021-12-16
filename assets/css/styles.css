@@ -219,6 +219,11 @@ a.nav__logo:hover p.accent {
         z-index: var(--z-fixed);
         border-radius: 0 0 1.5rem 1.5rem;
     }
+    .home__data {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .nav__img {
@@ -381,6 +386,30 @@ a.nav__logo:hover p.accent {
     width: 1.5rem;
     height: 5px;
     border-radius: 0.5rem;
+}
+
+.home__data {
+    max-width: 82%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--accent-color);
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 1.5rem;
+}
+
+.swiper-button-prev {
+    left: 0;
 }
 
 
@@ -981,6 +1010,11 @@ h4.category__title {
         margin-left: -5px;
         display: inline;
     }
+    .home__data {
+        max-width: 82%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
@@ -1097,6 +1131,11 @@ h4.category__title {
     h1>p.accent {
         margin-left: -5px;
         display: inline;
+    }
+    .home__data {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
