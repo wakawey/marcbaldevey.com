@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Marc Baldevey Software developer</title>
+</head>
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactTitle">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title" id="contactTitle">Contact Me</h3>
+            </div>
+            <!-- /.modal-header -->
+            <div class="modal-body">
+                <form class="mb-15" id="emailForm">
+                    <div class="form-group">
+                        <label class="sr-only" for="subject">Subject</label>
+                        <input type="text" class="modal-input" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="message">Message</label>
+                        <textarea class="modal-input" id="message" rows="6" placeholder="Your message here..." required></textarea>
+                    </div>
+                    <small>*All fields are required</small>
+                    <div class="modal-footer">
+                        <button type="button" id="cancel" class="button btn-small" data-dismiss="modal">Cancel</button>
+                        <button type="submit" id="sendEmail" class="button btn-small">Send Message</button>
+                    </div>
+                </form>
+
+                <!-- /.modal-footer -->
+            </div>
+            <!-- /.modal-body -->
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/img/logo.png" alt="" class="nav__logo-img"> Marc Bal
+                <p class="accent">dev</p>ey
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">Experience</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#interests" class="nav__link">Interests</a>
+                    </li>
+
+                    <a href="#" class="button button--ghost btn-contact">Contact</a>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home container" id="home">
+            <div class="swiper home-swiper">
+                <div class="swiper-wrapper">
+                    <!-- HOME SLIDER 1 -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="assets/img/me.png" alt="" class="home__img">
+                                <div class="home__indicator"></div>
+
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">That's me</h4>
+                                </div>
+                            </div>
+
+                            <div class="home__data">
+                                <h3 class="home__subtitle">Software developer</h3>
+                                <h1 class="home__title">MARC <br> BAL
+                                    <p class="accent">DEV</p>EY </h1>
+                                <p class="home__description">Hello, my name is Marc Baldevey and I'm a software developer with more than 10 years of experience designing, developing and deploying software for bussiness solutions.
+                                </p>
+
+                                <div class="home__buttons">
+                                    <a href="#" class="button btn-contact">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- HOME SLIDER 2 -->
+                    <section id="skills" class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="assets/img/working2.svg" alt="" class="home__img">
+                                <div class="home__indicator"></div>
+
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">Working hard</h4>
+                                    <span class="home__details-subtitle">Programmers: tools that convert caffeine
+                                        into code</span>
+                                </div>
+                            </div>
+
+                            <div class="home__data">
+                                <h1 class="home__title">SKILLS</h1>
+                                <ul class="skills">
+                                    <li class="skill" aria-label="advanced">Java</li>
+                                    <li class="skill" aria-label="average">JavaScript</li>
+                                    <li class="skill" aria-label="adept">HTML & CSS</li>
+                                    <li class="skill" aria-label="adept">SQL</li>
+                                    <li class="skill" aria-label="novice">Python</li>
+                                    <li class="skill" aria-label="average">Vue JS</li>
+                                    <li class="skill" aria-label="novice">React Native</li>
+                                </ul>
+                                <div class="home__buttons">
+                                    <a href="#" class="button btn-contact">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- HOME SLIDER 3 -->
+                    <section id="core-skills" class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="assets/img/core.svg" alt="" class="home__img">
+                                <div class="home__indicator"></div>
+
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">Captain Sem</h4>
+                                    <span class="home__details-subtitle">Veteran Spooky Ghost</span>
+                                </div>
+                            </div>
+
+                            <div class="home__data">
+                                <h1 class="home__title">CORE SKILLS</h1>
+                                <ul class="skills">
+                                    <li class="skill" aria-label="elite">TeamWork</li>
+                                    <li class="skill" aria-label="elite">Commitment</li>
+                                    <li class="skill" aria-label="elite">Communication</li>
+                                    <li class="skill" aria-label="elite">Methodology</li>
+                                    <li class="skill" aria-label="elite">Continuous Improvement</li>
+                                </ul>
+                                <div class="home__buttons">
+                                    <a href="#" class="button btn-contact">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--==================== CATEGORY ====================-->
+        <section id="experience" class="section category">
+            <h2 class="section__title">Experience</h2>
+
+            <div class="category__container container grid">
+                <div class="category__data">
+                    <img src="assets/img/logoInedit.png" alt="" class="category__img">
+                    <h2 class="category__title">Inèdit Software</h2>
+                    <h4 class="category__title">Software Engineer<br>2016-Present</h4>
+                    <p class="category__description">Developing, maintaining and deploying a web based application mostly written in Java, HTML and CSS.</p>
+                    <p class="category__description">Participated in other projects developed with VueJS (JavaScript), Python (API with Flask) and deployed with docker.</p>
+                    <p class="category__description">Installation and deployment of servers with MySQL databases, Apache and bash scripts</p>
+                    <p class="category__description">Give training and support to customers from different countries.
+                    </p>
+
+                </div>
+
+                <div class="category__data">
+                    <img src="assets/img/logoQAD.png" alt="" class="category__img">
+                    <h2 class="category__title">QAD Europe</h2>
+                    <h4 class="category__title">Software Engineer<br>2013-2016</h4>
+                    <p class="category__description">Working on a team in charge of global EDI (Electronic Data Interchange) projects, most of them in North America. </p>
+                    <p class="category__description">In charge of customer requirement analysis, project development and implementation and giving support once in production.</p>
+                    <p class="category__description">Habituated to work with big sized databases and taking ownership of projects during all phases.</p>
+                    </p>
+                </div>
+
+                <div class="category__data">
+                    <img src="assets/img/logoFnac.png" alt="" class="category__img">
+                    <h2 class="category__title">Fnac</h2>
+                    <h4 class="category__title">Retail Specialist<br>2010-2013</h4>
+                    </h4>
+                    <p class="category__description">Selling consumer electronics and help costumers finding most suitable products and services. It helped to provide me with good communication and marketing skills.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="section about" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">About Me</h2>
+                    <p class="about__description">Hard-working developer with the eagerness to keep learning, improving and facing new challanges every day. I like to think out of the box to find the best solution for every need. Worked in big international organizations and small
+                        local companies, with experience in different areas from managing big databases to designing and developing fron-end interfaces. Great communication skills with good level of English, Spanish and Catalan.
+                    </p>
+                    <a href="#" class="button">Know more</a>
+                </div>
+
+                <img src="assets/img/about.svg" alt="" class="about__img">
+            </div>
+        </section>
+
+        <!--==================== INTERESTS ====================-->
+        <section class="section interests" id="interests">
+            <h2 class="section__title">Personal interests</h2>
+
+            <div class="interest__container container grid">
+                <div class="interest__content">
+                    <img src="assets/img/camera.svg" alt="" class="interest__img">
+                    <h3 class="interest__title">Photography</h3>
+
+                </div>
+
+                <div class="interest__content">
+                    <img src="assets/img/bike.svg" alt="" class="interest__img">
+                    <h3 class="interest__title">MTB</h3>
+
+                </div>
+
+                <div class="interest__content">
+                    <img src="assets/img/travel.svg" alt="" class="interest__img">
+                    <h3 class="interest__title">Travel</h3>
+
+                </div>
+
+                <div class="interest__content">
+                    <img src="assets/img/wildlife.svg" alt="" class="interest__img">
+                    <h3 class="interest__title">Wildlife</h3>
+
+                </div>
+
+                <div class="interest__content">
+                    <img src="assets/img/moto.svg" alt="" class="interest__img">
+                    <h3 class="interest__title">Motorsport</h3>
+
+                </div>
+
+                <div class="interest__content">
+                    <img src="assets/img/diy.svg" alt="" class="interest__img">
+                    <h3 class="interest__title">DIY</h3>
+
+                </div>
+            </div>
+        </section>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <img src="assets/img/logo.png" alt="" class="footer__logo-img"> Marc Baldevey
+                    </a>
+
+                    <p class="footer__description">Software developer</p>
+
+                    <div class="footer__social">
+                        <a href="https://www.linkedin.com/in/marcbaldevey/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        <a href="https://www.instagram.com/marc_bq/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-instagram-alt'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">About</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Presentation</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="footer__link">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#core-skills" class="footer__link">Core skills</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Background</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#experience" class="footer__link">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#experience" class="footer__link">Education</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Me</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#about" class="footer__link">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#interests" class="footer__link">Personal Interests</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="footer__copy"></span>
+
+
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+        </a>
+        <script src="assets/js/scrollreveal.min.js"></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/modal.js"></script>
+        </script>
+
+</body>
+
+
+</html>
